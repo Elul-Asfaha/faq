@@ -1,13 +1,16 @@
 const Hero = () => {
     return (
-        <div>
-            <p className='text-6xl font-bold'>Frequently asked Questions</p>
-            <p>
-                These are the most commmonly asked questions about abc UI and
-                billing. Can't find what youre looking for?{" "}
-                <span>Chat to our friendly team</span>!
-            </p>
-
+        <div className='flex flex-col items-center justify-center pt-6 md:pt-20'>
+            <div className='max-w-[800px] flex flex-col items-center gap-2 text-center'>
+                <p className='text-3xl md:text-5xl font-bold'>
+                    Frequently asked Questions
+                </p>
+                <p className='text-justify max-w-[500px]'>
+                    These are the most commmonly asked questions about abc UI
+                    and billing. Can't find what youre looking for?{" "}
+                    <span>Chat to our friendly team</span>!
+                </p>
+            </div>
             <section>
                 <div className='grid grid-cols-2'>
                     <div>
@@ -20,9 +23,13 @@ const Hero = () => {
                             everything works and how you can get started with
                             abc UI.
                         </p>
-                        <div>
-                            <button>Learn more</button>
-                            <button>Book 30 minutes</button>
+                        <div className='flex gap-2'>
+                            <button className='py-[6px] px-4 rounded-full border border-black'>
+                                Learn more
+                            </button>
+                            <button className='py-[6px] px-4 rounded-full bg-black text-white'>
+                                Book 30 minutes
+                            </button>
                         </div>
                     </div>
                     <div></div>
