@@ -1,5 +1,33 @@
 import Accordion from "./accordion";
+import { BsEmojiSmile, BsViewStacked, BsPersonPlus } from "react-icons/bs";
 
+import { BiWallet } from "react-icons/bi";
+const accordionData = [
+    {
+        title: "Is there a free trial avaliable?",
+        description:
+            "Yes, you can try us for free for 30 days. If you want we will provide you with a free 30-minute onboarding call to get you up and running. Book a call here.",
+        icon: <BsEmojiSmile />,
+    },
+    {
+        title: "Can i change my plan later?",
+        description:
+            "Yes, you can try us for free for 30 days. If you want we will provide you with a free 30-minute onboarding call to get you up and running. Book a call here.",
+        icon: <BsViewStacked />,
+    },
+    {
+        title: "What is your cancellation policy?",
+        description:
+            "Yes, you can try us for free for 30 days. If you want we will provide you with a free 30-minute onboarding call to get you up and running. Book a call here.",
+        icon: <BiWallet />,
+    },
+    {
+        title: "Can other info be added to an invoice?",
+        description:
+            "Yes, you can try us for free for 30 days. If you want we will provide you with a free 30-minute onboarding call to get you up and running. Book a call here.",
+        icon: <BsPersonPlus />,
+    },
+];
 const Hero = () => {
     return (
         <div className='flex flex-col items-center justify-center pt-6 md:pt-20'>
@@ -15,11 +43,18 @@ const Hero = () => {
                     Can't find what youre looking for?{" "}
                     <span>Chat to our friendly team</span>!
                 </p>
-                <Accordion />
+                {accordionData.map((items) => (
+                    <Accordion
+                        key={items.title}
+                        title={items.title}
+                        description={items.description}
+                        icon={items.icon}
+                    />
+                ))}
             </div>
             <section>
-                <div className='grid grid-cols-2'>
-                    <div>
+                <div className='grid md:grid-cols-2'>
+                    <div className='px-5'>
                         <p className='text-3xl font-bold'>
                             Book a 1-on-1 onboarding
                         </p>

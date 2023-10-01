@@ -1,23 +1,20 @@
-import { useState } from "react";
+import { useState, ReactNode } from "react";
 import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
-import { BsEmojiSmile } from "react-icons/bs";
 type accordionType = {
     title: string;
-    icon: string;
+    icon: ReactNode;
     description: string;
 };
 const Accordion = ({ title, icon, description }: accordionType) => {
     const [display, setDisplay] = useState(false);
     return (
-        <div className='w-[600px] flex gap-5'>
+        <div className='w-[350px] md:w-[600px] flex gap-5'>
             <div className='h-fit border border-black p-2 rounded-md'>
-                <BsEmojiSmile />
+                {icon}
             </div>
             <div className='w-full'>
                 <div className='flex justify-between items-center'>
-                    <p className='font-bold  py-2'>
-                        is there a free trial avaliable?
-                    </p>
+                    <p className='font-bold  py-2'>{title}</p>
                     <button
                         onClick={() => {
                             setDisplay(!display);
@@ -34,9 +31,7 @@ const Accordion = ({ title, icon, description }: accordionType) => {
                             : "hidden"
                     }`}
                 >
-                    Yes, you can try us for free for 30 days. If you want we
-                    will provide you with a free 30-minute onboarding call to
-                    get you up and running. Book a call here.
+                    {description}
                 </p>
             </div>
         </div>
