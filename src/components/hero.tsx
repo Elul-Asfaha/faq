@@ -1,4 +1,4 @@
-const hero = () => {
+const Hero = () => {
     return (
         <div>
             <p className='text-6xl font-bold'>Frequently asked Questions</p>
@@ -32,4 +32,4 @@ const hero = () => {
     );
 };
 
-export default hero;
+export default Hero;
