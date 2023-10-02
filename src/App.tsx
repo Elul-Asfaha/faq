@@ -1,4 +1,5 @@
 import Nav from "./components/Nav";
+import BottomNav from "./components/bottomNav";
 import Hero from "./components/hero";
 
 const App = () => {
@@ -6,6 +7,7 @@ const App = () => {
         <div>
             <Nav />
             <Hero />
+            <BottomNav />
         </div>
     );
 };
