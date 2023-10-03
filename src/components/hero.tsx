@@ -121,7 +121,7 @@ const Hero = () => {
                     </div>
                     <div className='w-full'>
                         <div className='grid grid-cols-6 grid-rows-7 md:max-w-[500px] h-full gap-2'>
-                            <div className='shadow-lg border col-span-2 row-span-2 row-start-2 col-start-2 flex'>
+                            <div className='shadow-lg border col-span-2 row-span-2 row-start-1 md:row-start-2 col-start-2 flex'>
                                 <img
                                     src={img1}
                                     alt=''
@@ -135,7 +135,7 @@ const Hero = () => {
                                     className='object-cover'
                                 />
                             </div>
-                            <div className='shadow-lg border col-span-2 col-start-3 row-span-3 flex'>
+                            <div className='shadow-lg border col-span-2 col-start-2 md:col-start-3 row-span-3 flex'>
                                 <img
                                     src={img5}
                                     alt=''
