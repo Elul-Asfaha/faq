@@ -24,21 +24,14 @@ const Accordion = ({
                 {icon}
             </button>
             <div className='w-full'>
-                <div className='flex justify-between items-center'>
-                    <button
-                        onClick={() => {
-                            setDisplay(!display);
-                        }}
-                        className='font-bold py-3'
-                    >
-                        {title}
-                    </button>
-                    <button
-                        onClick={() => {
-                            setDisplay(!display);
-                        }}
-                        className='text-2xl'
-                    >
+                <div
+                    className='flex justify-between items-center'
+                    onClick={() => {
+                        setDisplay(!display);
+                    }}
+                >
+                    <button className='font-bold py-3'>{title}</button>
+                    <button className='text-2xl'>
                         {!display ? <BiChevronDown /> : <BiChevronUp />}
                     </button>
                 </div>
