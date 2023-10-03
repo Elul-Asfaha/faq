@@ -3,7 +3,7 @@ import { PiStarFour } from "react-icons/pi";
 
 const BottomNav = () => {
     return (
-        <div className='grid md:grid-cols-2 px-5 md:px-16'>
+        <div className='grid md:grid-cols-2 px-5 md:px-16 pb-10'>
             <div className='flex flex-col gap-5 text-[#111826]'>
                 <div className='flex gap-2 items-center text-2xl font-bold'>
                     <div>

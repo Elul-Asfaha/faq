@@ -14,6 +14,7 @@ import img1 from "../assets/img1.jpg";
 import img2 from "../assets/img2.jpg";
 import img4 from "../assets/img4.jpg";
 import img5 from "../assets/img5.jpg";
+import { PiStarFour } from "react-icons/pi";
 
 const accordionData = [
     {
@@ -70,6 +71,9 @@ const Hero = () => {
     return (
         <div className='flex flex-col items-center justify-center px-16 pt-6 md:pt-20 px-15'>
             <div className='max-w-[800px] flex flex-col items-center gap-1 text-center'>
+                <div className='text-3xl md:text-5xl mb-2 md:mb-5'>
+                    <PiStarFour />
+                </div>
                 <p className='text-3xl md:text-5xl font-bold'>
                     Frequently asked Questions
                 </p>

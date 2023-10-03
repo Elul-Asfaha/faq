@@ -15,12 +15,24 @@ const Accordion = ({
     const [display, setDisplay] = useState(start);
     return (
         <div className='w-[350px] md:w-[600px] flex flex-col md:flex-row gap-1 md:gap-5'>
-            <div className='h-fit w-fit shadow-md p-3 text-xl rounded-md'>
+            <button
+                className='h-fit w-fit shadow-md p-3 text-xl rounded-md'
+                onClick={() => {
+                    setDisplay(!display);
+                }}
+            >
                 {icon}
-            </div>
+            </button>
             <div className='w-full'>
                 <div className='flex justify-between items-center'>
-                    <p className='font-bold  py-3'>{title}</p>
+                    <button
+                        onClick={() => {
+                            setDisplay(!display);
+                        }}
+                        className='font-bold py-3'
+                    >
+                        {title}
+                    </button>
                     <button
                         onClick={() => {
                             setDisplay(!display);
