@@ -12,7 +12,7 @@ const Accordion = ({
     description,
     start = false,
 }: accordionType) => {
-    const [display, setDisplay] = useState(false);
+    const [display, setDisplay] = useState(start);
     return (
         <div className='w-[350px] md:w-[600px] flex gap-5'>
             <div className='h-fit shadow-md p-3 text-xl rounded-md'>{icon}</div>
@@ -30,9 +30,7 @@ const Accordion = ({
                 </div>
                 <p
                     className={`${
-                        start || display
-                            ? "flex font-semibold text-left"
-                            : "hidden"
+                        display ? "flex font-semibold text-left" : "hidden"
                     }`}
                 >
                     {description}

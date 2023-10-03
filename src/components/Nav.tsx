@@ -16,12 +16,12 @@ const Nav = () => {
             </div>
             <div className='md:hidden'>Abc ui</div>
             <div className='hidden md:flex gap-5'>
-                <div className='rounded-full py-1 px-3 border-black border-2'>
+                <button className='rounded-full py-1 px-3 border-black border-2 shadow-md'>
                     Log in
-                </div>
-                <div className='rounded-full text-white bg-black py-1 px-3'>
+                </button>
+                <button className='rounded-full text-white bg-black py-1 px-3 shadow-md'>
                     Get started
-                </div>
+                </button>
             </div>
             <div className='flex items-center gap-1 text-3xl md:hidden'>
                 <HiMenuAlt4 />
