@@ -9,7 +9,7 @@ const App = () => {
         setSideNavToggle(!sideNavToggle);
     };
     return (
-        <div className='overflow-x-hidden h-screen overflow-y-scroll'>
+        <div className='relative overflow-x-hidden h-screen overflow-y-scroll'>
             <Nav sideNavToggler={handleToggle} />
             <Hero />
             <BottomNav />

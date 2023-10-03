@@ -11,6 +11,10 @@ import { BiWallet } from "react-icons/bi";
 import { MdMailOutline } from "react-icons/md";
 import { TbMessage2Question } from "react-icons/tb";
 import img1 from "../assets/img1.jpg";
+import img2 from "../assets/img2.jpg";
+import img4 from "../assets/img4.jpg";
+import img5 from "../assets/img5.jpg";
+
 const accordionData = [
     {
         title: "Is there a free trial avaliable?",
@@ -90,9 +94,9 @@ const Hero = () => {
                     Load more
                 </button>
             </div>
-            <section className='py-10'>
-                <div className='grid md:grid-cols-2 items-center'>
-                    <div className='flex flex-col justify-center max-w-[500px]'>
+            <section className='py-10 px-5 w-screen md:w-auto'>
+                <div className='grid md:grid-cols-2 items-center gap-10'>
+                    <div className='flex flex-col justify-center md:max-w-[500px]'>
                         <p className='text-3xl font-bold pb-7 text-[#111826]'>
                             Book a 1-on-1 onboarding
                         </p>
@@ -111,14 +115,37 @@ const Hero = () => {
                             </button>
                         </div>
                     </div>
-                    <div className='grid grid-cols-6 grid-rows-6 w-full h-full gap-2'>
-                        <div className='col-span-2 row-span-2 row-start-2 col-start-2 border border-black flex'>
-                            <img src={img1} alt='' />
+                    <div className='w-full'>
+                        <div className='grid grid-cols-6 grid-rows-7 md:max-w-[500px] h-full gap-2'>
+                            <div className='shadow-lg border col-span-2 row-span-2 row-start-2 col-start-2 flex'>
+                                <img
+                                    src={img1}
+                                    alt=''
+                                    className='object-cover'
+                                />
+                            </div>
+                            <div className='shadow-lg border col-span-2 row-span-3 flex'>
+                                <img
+                                    src={img2}
+                                    alt=''
+                                    className='object-cover'
+                                />
+                            </div>
+                            <div className='shadow-lg border col-span-2 col-start-3 row-span-3 flex'>
+                                <img
+                                    src={img5}
+                                    alt=''
+                                    className='object-cover'
+                                />
+                            </div>
+                            <div className='shadow-lg border col-span-2 row-span-5 flex'>
+                                <img
+                                    src={img4}
+                                    alt=''
+                                    className='object-cover'
+                                />
+                            </div>
                         </div>
-                        <div className='col-span-3 row-span-3 border border-black flex'></div>
-                        <div className='col-span-2 row-span-2 border border-black flex'></div>
-                        <div className='col-span-2 row-span-3 border border-black flex'></div>
-                        <div className='col-span-2 row-span-2 border border-black flex'></div>
                     </div>
                 </div>
             </section>
