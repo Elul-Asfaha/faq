@@ -105,7 +105,7 @@ const Hero = () => {
                             <button className='py-[6px] px-4 rounded-full shadow-md border-2 border-[#111826] hover:bg-[#111826] hover:text-white '>
                                 Learn more
                             </button>
-                            <button className='py-[6px] px-4 rounded-full shadow-md bg-[#111826] text-white hover:text-[#111826] hover:bg-white'>
+                            <button className='py-[6px] px-4 rounded-full shadow-md border-2 border-[#111826] bg-[#111826] text-white hover:text-[#111826] hover:bg-white'>
                                 Book 30 minutes
                             </button>
                         </div>

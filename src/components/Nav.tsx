@@ -1,6 +1,9 @@
 import { HiMenuAlt4 } from "react-icons/hi";
 import { PiStarFour } from "react-icons/pi";
-const Nav = () => {
+type navType = {
+    sideNavToggler: () => void;
+};
+const Nav = ({ sideNavToggler }: navType) => {
     return (
         <div className='flex font-semibold justify-between items-center px-5 py-4'>
             <div className='hidden md:flex items-center font-semibold gap-5'>
@@ -24,7 +27,9 @@ const Nav = () => {
                 </button>
             </div>
             <div className='flex items-center gap-1 text-3xl md:hidden'>
-                <HiMenuAlt4 />
+                <div onClick={() => sideNavToggler()}>
+                    <HiMenuAlt4 />
+                </div>
                 <p className='text-lg font-semibold'>Menu</p>
             </div>
         </div>
