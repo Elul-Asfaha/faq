@@ -10,6 +10,7 @@ import {
 import { BiWallet } from "react-icons/bi";
 import { MdMailOutline } from "react-icons/md";
 import { TbMessage2Question } from "react-icons/tb";
+import img1 from "../assets/img1.jpg";
 const accordionData = [
     {
         title: "Is there a free trial avaliable?",
@@ -90,8 +91,8 @@ const Hero = () => {
                 </button>
             </div>
             <section className='py-10'>
-                <div className='grid md:grid-cols-2'>
-                    <div className=''>
+                <div className='grid md:grid-cols-2 items-center'>
+                    <div className='flex flex-col justify-center max-w-[500px]'>
                         <p className='text-3xl font-bold pb-7 text-[#111826]'>
                             Book a 1-on-1 onboarding
                         </p>
@@ -110,7 +111,15 @@ const Hero = () => {
                             </button>
                         </div>
                     </div>
-                    <div></div>
+                    <div className='grid grid-cols-6 grid-rows-6 w-full h-full gap-2'>
+                        <div className='col-span-2 row-span-2 row-start-2 col-start-2 border border-black flex'>
+                            <img src={img1} alt='' />
+                        </div>
+                        <div className='col-span-3 row-span-3 border border-black flex'></div>
+                        <div className='col-span-2 row-span-2 border border-black flex'></div>
+                        <div className='col-span-2 row-span-3 border border-black flex'></div>
+                        <div className='col-span-2 row-span-2 border border-black flex'></div>
+                    </div>
                 </div>
             </section>
         </div>

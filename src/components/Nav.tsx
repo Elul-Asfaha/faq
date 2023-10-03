@@ -9,7 +9,6 @@ const Nav = ({ sideNavToggler }: navType) => {
             <div className='hidden md:flex items-center font-semibold gap-5'>
                 <div className='flex gap-2 items-center text-2xl font-bold'>
                     <PiStarFour />
-                    <p>Abc ui</p>
                 </div>
                 <div>Home</div>
                 <div>Products</div>
@@ -17,7 +16,12 @@ const Nav = ({ sideNavToggler }: navType) => {
                 <div>Blog</div>
                 <div>About us</div>
             </div>
-            <div className='md:hidden'>Abc ui</div>
+            <div className='flex items-center font-semibold gap-2 md:hidden'>
+                <div className='flex gap-2 items-center text-2xl font-bold'>
+                    <PiStarFour />
+                </div>
+                <p>Abc ui</p>
+            </div>
             <div className='hidden md:flex gap-5'>
                 <button className='rounded-full py-1 px-3 border-black border-2 shadow-md'>
                     Log in
